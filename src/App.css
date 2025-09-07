@@ -1,0 +1,123 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Add this to App.css or in a <style> tag for global background */
+body {
+  background: linear-gradient(120deg, #e0f7fa 0%, #fff 100%);
+  min-height: 100vh;
+}
+
+/* Responsive grid for cards */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Improved card shadow and rounded corners */
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 128, 128, 0.08);
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Section improvements */
+.section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #e0f7fa 0%, #f1f8e9 100%);
+  box-shadow: 0 2px 12px rgba(0, 128, 128, 0.06);
+}
+
+/* Improved header/footer */
+header, footer {
+  border-radius: 0 0 1rem 1rem;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 128, 128, 0.04);
+}
+
+/* Navigation bar improvements */
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, #e0f7fa 0%, #f1f8e9 100%);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Improved Empty state */
+.empty {
+  padding: 2rem 0;
+  text-align: center;
+  color: #26a69a;
+  font-size: 1.1rem;
+}
+
+/* Button improvements */
+.button {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  transition: box-shadow 0.2s;
+}
+.button:hover {
+  box-shadow: 0 2px 8px rgba(38, 166, 154, 0.12);
+}
+
+/* Main container improvements */
+.main-container {
+  max-width: 96vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-radius: 1.5rem;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 4px 32px rgba(38, 166, 154, 0.07);
+}
